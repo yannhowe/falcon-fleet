@@ -1,0 +1,16 @@
+Namespace: falcon-kubernetes-protection
+helm:
+  releaseName: kpagent
+  chart: kpagent-helm/cs-k8s-protection-agent
+  repo: https://registry.crowdstrike.com/kpagent-helm
+  values:
+    image:
+      repository: registry.crowdstrike.com/kubernetes_protection/kpagent
+      tag:
+    crowdstrikeConfig:
+      clientID: ${FALCON_CLIENT_ID}
+      clientSecret: ${FALCON_CLIENT_SECRET}
+      clusterName: ${K8S_CLUSTERNAME}
+      env: ${FALCON_CLOUD_REGION}
+      cid: ${FALCON_CID}
+      dockerAPIToken: ${FALCON_KPA_DOCKERAPITOKEN}
