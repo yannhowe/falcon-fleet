@@ -1,5 +1,0 @@
-Namespace: bitnami
-helm:
-  releaseName: bitnami-nginx
-  chart: bitnami/nginx
-  repo: https://charts.bitnami.com/bitnami
