@@ -3,6 +3,7 @@ helm:
   releaseName: kpagent
   chart: kpagent-helm/cs-k8s-protection-agent
   repo: https://registry.crowdstrike.com/kpagent-helm
+  version: 0.585.0
   values:
     image:
       repository: registry.crowdstrike.com/kubernetes_protection/kpagent
